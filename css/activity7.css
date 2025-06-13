@@ -1,0 +1,294 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-padding-top: 150px;
+}
+
+/* --- Main Heading --- */
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #BB86FC;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(187, 134, 252, 0.6), 0 0 20px rgba(187, 134, 252, 0.4);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* --- Activity Content Wrapper --- */
+.activity-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 50px 20px 90px 20px;
+    background-color: #121212;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); 
+    border: 1px solid rgba(187, 134, 252, 0.1); 
+}
+
+/* --- Month Navigation --- */
+.month-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+
+.month-navigation .navi-link {
+    background-color: #1F1F1F; 
+    color: #BB86FC;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.month-navigation .navi-link:hover {
+    background-color: #FF8080; 
+    color: #121212; 
+    box-shadow: 0 4px 12px rgba(255, 128, 128, 0.3);
+}
+
+/* --- Month Navigation --- */
+.month-navigation2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.month-navigation2 .navi-link {
+    background-color: #1F1F1F; 
+    color: #BB86FC; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.month-navigation2 .navi-link:hover {
+    background-color: #FF8080; 
+    color: #121212; 
+    box-shadow: 0 4px 12px rgba(255, 128, 128, 0.3);
+}
+
+/* --- Calendar Section --- */
+.calendar-section {
+    background-color: #1F1F1F; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(187, 134, 252, 0.1); 
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 30px;
+    
+}
+
+/* --- Calendar Header --- */
+.calendar-header {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #BB86FC;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.calendar-header .nav-arrow {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.calendar-header .nav-arrow:hover {
+    color: #FF8080; 
+}
+
+/* --- Calendar Table Container  --- */
+.calendar-table-container {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+/* --- Calendar Table --- */
+.calendar-table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 5px; 
+    table-layout: fixed; 
+}
+
+.calendar-table thead th {
+    font-weight: bold;
+    color: #03dac6; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(187, 134, 252, 0.2); 
+    text-align: center;
+}
+
+.calendar-table tbody td {
+    background-color: #2a2a2a; 
+    color: #F0F0F0; 
+    padding: 35px 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    min-height: 60px;
+    vertical-align: middle;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.calendar-table tbody td:hover:not(.empty-cell) {
+    background-color: #3e3e3e; 
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.3); 
+}
+
+.calendar-table tbody td.sunday {
+    color: #FF8080; 
+}
+
+.calendar-table tbody td.holiday {
+    background-color: #BB86FC; 
+    color: #121212; 
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.6); 
+}
+
+.calendar-table tbody td.empty-cell {
+    background-color: transparent; 
+    visibility: hidden; 
+    box-shadow: none;
+}
+
+/* --- Holiday List Section --- */
+.holiday-list-section {
+    background-color: #1F1F1F; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(187, 134, 252, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    color: #F0F0F0; 
+}
+
+.holiday-list-section h2 {
+    color: #BB86FC; 
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.holiday-list-section .holiday-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.holiday-list-section .holiday-links li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #BB86FC; 
+}
+
+.holiday-list-section .holiday-links li a {
+    color: #F0F0F0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.holiday-list-section .holiday-links li a:hover {
+    color: #FF8080;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.2em;
+    }
+    .month-navigation {
+        gap: 8px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .month-navigation .navi-link {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+    .holiday-list-section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .holiday-list-section h2 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    .holiday-list-section .holiday-links li {
+        font-size: 0.85em;
+        padding-left: 15px;
+    }
+    .calendar-section {
+        padding: 15px;
+    }
+    .calendar-header {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .calendar-table thead th {
+        padding: 8px 0;
+        font-size: 0.9em;
+    }
+    .calendar-table tbody td {
+        padding: 10px 3px;
+        min-height: 50px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.8em;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .month-navigation {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .month-navigation .navi-link {
+        width: 80%;
+        text-align: center;
+    }
+    .activity-content-wrapper {
+        margin: 20px 10px;
+        padding: 30px 10px;
+    }
+    .calendar-table tbody td {
+        padding: 8px 2px; 
+        font-size: 0.8em;
+    }
+}

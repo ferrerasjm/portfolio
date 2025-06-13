@@ -1,0 +1,572 @@
+
+
+/* --- Secondary Navigation --- */
+.project-nav {
+    background-color:  rgba(187, 134, 252, 0.6); 
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(187, 134, 252, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 85px; 
+    z-index: 999;
+}
+
+ul.sub-nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #F0F0F0;
+    padding: 14px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.dropbtn:hover {
+    color: #121212;
+    background-color: #BB86FC;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #252525;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    border-top: 2px solid #BB86FC;
+}
+
+.dropdown-content a {
+    color: #B0B0B0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF8080;
+    color: #121212;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- Intro Section --- */
+.activity-intro-section,
+.animation-showcase-section { 
+    min-height: 77vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle at center, #2b2b2b 0% 0%, #121212 80%); 
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(187, 134, 252, 0.2); 
+    box-shadow: inset 0 -10px 30px rgba(0,0,0,0.5); 
+}
+
+.activity-intro-section .intro-content,
+.animation-showcase-section .animation-header {
+    max-width: 900px;
+    transform: translateY(20px);
+    margin-bottom: 40px; 
+}
+
+.activity-intro-section h1,
+.animation-showcase-section .section-heading { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.3em; 
+    color: #BB86FC;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(187, 134, 252, 0.4); 
+}
+.activity-intro-section p,
+.animation-showcase-section .description { 
+    font-size: 1.4em; 
+    color: #B0B0B0;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.animation-showcase-section .webfont { 
+    font-family: myFirstFont;
+    font-size: 1.4em; 
+    color: #B0B0B0;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Back Link Styling */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #BB86FC;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #FF8080;
+}
+
+/* Note style */
+.note {
+    font-size: 0.9em;
+    color: #B0B0B0;
+    margin-top: 30px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .activity-intro-section h1,
+    .animation-showcase-section .section-heading {
+        font-size: 3.5em;
+    }
+    .activity-intro-section p,
+    .animation-showcase-section .description {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-intro-section h1,
+    .animation-showcase-section .section-heading {
+        font-size: 2.8em;
+    }
+    .activity-intro-section p,
+    .animation-showcase-section .description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-intro-section h1,
+    .animation-showcase-section .section-heading {
+        font-size: 2.2em;
+    }
+    .activity-intro-section p,
+    .animation-showcase-section .description {
+        font-size: 0.9em;
+    }
+    .animation-container {
+        width: 100%; 
+    }
+    div.animation, div.animation2, div.animation3, div.animation4, div.animation5,
+    div.animation6, div.animation8, div.animation9, div.animation10,
+    div.transition, div.transition2, div.transition3, div.transition4,
+    div.translate, div.transform-example {
+        width: 90%; 
+        height: 200px; 
+    }
+    div.animation7 {
+        height: 40px;
+    }
+}
+
+/* Animation Container */
+.animation-container {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 600px; 
+    min-height: 400px; 
+}
+
+/* Animation 1 */
+div.animation {
+  width: 250px; 
+  height: 150px; 
+  background-color: #FF8080; 
+  animation-name: anim1Example; 
+  animation-duration: 4s; 
+  margin: 0 auto;
+  border-radius: 12px;
+
+}
+
+@keyframes anim1Example { 
+  from {background-color: #FF8080;} 
+  to {background-color: #FFD700;} 
+}
+
+/* Animation 2 */
+div.animation2 {
+  width: 250px;
+  height: 150px;
+  background-color: #FF8080; 
+  animation-name: anim2Example; 
+  animation-duration: 4s; 
+  margin: 0 auto;
+  border-radius: 12px;
+
+}
+
+@keyframes anim2Example { 
+  0%   {background-color: #FF8080;} 
+  25%  {background-color: #FFD700;} 
+  50%  {background-color: #00C4B4;} 
+  100% {background-color: #BB86FC;} 
+}
+
+/* Animation 3 */
+div.animation3 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080; 
+  position: relative;
+  animation-name: anim3Example; 
+  animation-duration: 4s; 
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 128, 128, 0.6);
+}
+
+@keyframes anim3Example { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+
+/* Animation 4 */
+div.animation4 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080; 
+  position: relative;
+  animation-name: anim4Example; 
+  animation-duration: 4s; 
+  animation-delay: 2s; 
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@keyframes anim4Example { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+/* Animation 5 */
+div.animation5 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080; 
+  position: relative;
+  animation-name: anim5Example; 
+  animation-duration: 4s; 
+  animation-iteration-count: 3; 
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@keyframes anim5Example { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+/* Animation 6 */
+div.animation6 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080; 
+  position: relative;
+  animation-name: anim6Example; 
+  animation-duration: 4s; 
+  animation-iteration-count: infinite; 
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@keyframes anim6Example { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+/* Animation 7 */
+.animation7-wrapper { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    align-items: center;
+    width: 100%;
+}
+div.animation7 {
+  width: 10%; 
+  height: 50px;
+  background-color: #BB86FC; 
+  font-weight: bold;
+  position: relative;
+  animation-name: anim7MyMove; 
+  animation-duration: 5s; 
+  animation-fill-mode: forwards; 
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212; 
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.5); 
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes anim7MyMove { 
+  from {left: 0px;}
+  to {left: 200px;} 
+}
+
+/* Animation 8 */
+div.animation8 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080; 
+  position: relative;
+  animation-name: anim8Example; 
+  animation-duration: 5s; 
+  animation-timing-function: linear; 
+  animation-delay: 2s; 
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+  margin: 0 auto;
+  border-radius: 50%; 
+}
+
+@keyframes anim8Example { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+
+/* Animation 9 */
+div.animation9 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080;
+  position: relative;
+  animation-name: anim9Example; 
+  animation-duration: 5s;
+  animation-timing-function: linear; 
+  animation-delay: 2s; 
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+  margin: 0 auto;
+  border-radius: 50%;
+
+}
+
+@keyframes anim9Example { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+/* Animation 10 (Shorthand Property) */
+div.animation10 {
+  width: 100px;
+  height: 100px;
+  background-color: #FF8080; 
+  position: relative;
+  animation: anim10MyFirst 5s linear 2s infinite alternate; 
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+@keyframes anim10MyFirst { 
+  0%   {background-color:#FF8080; left:0px; top:0px;}
+  25%  {background-color:#FFD700; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#BB86FC; left:0px; top:100px;} 
+  100% {background-color:#FF8080; left:0px; top:0px;}
+}
+
+/* Transition 1 */
+div.transition {
+  width: 250px; 
+  height: 150px; 
+  background: #BB86FC; 
+  transition: width 2s; 
+  margin: 0 auto;
+  border-radius: 12px;
+
+}
+
+div.transition:hover {
+  width: 400px; 
+}
+
+/* Transition 2 */
+div.transition2 {
+  width: 250px;
+  height: 150px;
+  background: #BB86FC; 
+  transition: width 2s, height 4s; 
+  margin: 0 auto;
+  border-radius: 12px;
+
+}
+
+div.transition2:hover {
+  width: 400px; 
+  height: 250px; 
+}
+
+/* Transition 3 */
+div.transition3 {
+  width: 250px;
+  height: 150px;
+  background: #BB86FC; 
+  transition: width 3s; 
+  transition-delay: 1s; 
+  margin: 0 auto;
+  border-radius: 12px;
+
+}
+
+div.transition3:hover {
+  width: 400px; 
+}
+
+/* Transition 4 */
+div.transition4 {
+  width: 150px;
+  height: 150px;
+  background: #BB86FC; 
+  transition: width 2s, height 2s, transform 2s; 
+  margin: 0 auto;
+  border-radius: 12px; 
+
+}
+
+div.transition4:hover {
+  width: 250px; 
+  height: 250px; 
+  transform: rotate(180deg);
+  background-color: #FF8080; 
+
+}
+
+/* Translate Method */
+div.translate {
+  width: 200px; 
+  height: 80px; 
+  background-color: #BB86FC; 
+  transform: translate(50px,100px); 
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Webfont */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+
+/* 2D Transform */
+div.transform {
+  margin-left: 25%;
+  padding: 45px 55px;
+  height: 100%;
+}
+
+
+ul.side {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #8e8dbe;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li.side a {
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.side a.active {
+  background-color: #725ac1;
+  color: white;
+}
+
+li.side a:hover:not(.active) {
+  background-color: #f1f1f1;
+  color: black;
+}
+

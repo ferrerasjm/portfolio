@@ -1,0 +1,148 @@
+/* --- Styles for general activity content wrapper --- */
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #BB86FC;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(187, 134, 252, 0.6), 0 0 20px rgba(187, 134, 252, 0.4);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.activity-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Table Heading Styling --- */
+.table-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #FF8080;
+    margin: 30px 0 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(255, 128, 128, 0.5);
+    text-align: center;
+    width: 100%;
+}
+
+/* --- Table Styling for table class --- */
+.data-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto 40px auto;
+    background-color: #2a2a2a;
+    color: #F0F0F0;
+    border: 1px solid rgba(187, 134, 252, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.data-table caption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #BB86FC;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid rgba(187, 134, 252, 0.2);
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+.data-table th {
+    background-color: #383838;
+    color: #BB86FC;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #2e2e2e;
+}
+
+.data-table tr:hover {
+    background-color: #3a3a3a;
+    transition: background-color 0.3s ease;
+}
+
+.activity-content-wrapper .home-link {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    padding: 12px 25px;
+    border: 2px solid #FF8080;
+    border-radius: 50px;
+    color: #FF8080;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2.5em;
+    }
+    .table-heading {
+        font-size: 1.5em;
+        margin: 30px 0 15px;
+    }
+    .activity-content-wrapper {
+        padding: 40px 15px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .data-table th,
+    .data-table td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    .activity-content-wrapper .home-link {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .table-heading {
+        font-size: 1.2em;
+        margin: 25px 0 10px;
+    }
+    .activity-content-wrapper {
+        padding: 30px 10px;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    .data-table th,
+    .data-table td {
+        padding: 6px 8px;
+        font-size: 0.8em;
+    }
+    .activity-content-wrapper .home-link {
+        font-size: 0.9em;
+        padding: 8px 18px;
+    }
+}

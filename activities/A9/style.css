@@ -1,0 +1,409 @@
+/* Navbar */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cac4ce;
+
+}
+
+body.home {
+  text-align: center;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat:  no-repeat;
+}
+
+h3, p {
+  font-family: 'Courier New', Courier, monospace;
+}
+h1.body {
+  color: #725ac1;
+  font-size: 55px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10%;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 80px 20px 20px;
+  overflow: hidden;
+  background-color: #242038;
+  display: flex;
+  justify-content: right; 
+}
+
+li.nav {
+  float: left;
+}
+
+li.nav a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+li.nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #8d86c9;
+  transition: background-color 0.5s ease;
+  border-radius: 8px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dropdown-content a:hover {background-color: #242038; color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Animation 1 */
+div.animation {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Animation 2 */ 
+div.animation2 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+  
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+/* Animation 3 */
+div.animation3 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Animation 4 */
+div.animation4 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Animation 5 */
+div.animation5 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Animation 6 */
+div.animation6 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Animation 7 */
+div.animation7 {
+  width: 500px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+    margin: 0 auto;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+/* Animation 8 */
+div.animation8 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Animation 9 */
+div.animation9 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Animation 10 */
+div.animation10 {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Transition 1 */
+div.transition {
+  width: 500px;
+  height: 300px;
+  background: red;
+  transition: width 2s;
+  margin: 0 auto;
+}
+
+div.transition:hover {
+  width: 800px;
+}
+
+/* Transition 2 */
+div.transition2 {
+  width: 500px;
+  height: 300px;
+  background: red;
+  transition: width 2s, height 4s;
+  margin: 0 auto;
+}
+
+div.transition2:hover {
+  width: 800px;
+  height: 500px;
+}
+
+/* Transition 3 */
+div.transition3 {
+  width: 500px;
+  height: 300px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+  margin: 0 auto;
+}
+
+div.transition3:hover {
+  width: 800px;
+}
+
+/* Transition 4 */
+div.transition4 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  margin: 0 auto;
+}
+
+div.transition4:hover {
+  width: 400px;
+  height: 400px;
+  transform: rotate(180deg);
+}
+
+/* Translate Method */
+div.translate {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+  margin: 0 auto;
+}
+
+/* Webfont */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+
+* {
+  font-family: myFirstFont;
+}
+
+/* 2D Transform */
+
+div.transform {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+ul.side {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #8e8dbe;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li.side a {
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.side a.active {
+  background-color: #725ac1;
+  color: white;
+}
+
+li.side a:hover:not(.active) {
+  background-color: #f1f1f1;
+  color: black;
+}

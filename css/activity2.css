@@ -1,0 +1,172 @@
+/* --- Resume Wrapper Styling --- */
+.resume-wrapper {
+    background-color: #1E1E1E;
+    max-width: 850px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(187, 134, 252, 0.2);
+    overflow: hidden;
+    padding: 0;
+}
+
+/* --- Resume Header Section --- */
+.resume-header-section {
+    background-color: #BB86FC;
+    color: #121212;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.resume-header-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.resume-header-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.resume-header-section p strong {
+    font-weight: 600;
+}
+
+/* --- Section Titles (e.g., Objective, Education) --- */
+.resume-section-title {
+    background-color: #2C2C2C;
+    color: #F0F0F0;
+    text-align: left;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(187, 134, 252, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #BB86FC, #FF8080);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
+
+.resume-section-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+/* --- Content Blocks --- */
+.resume-content-block {
+    background-color: #1E1E1E;
+    padding: 25px 30px;
+    border-bottom: 1px solid rgba(187, 134, 252, 0.05);
+    text-align: left;
+}
+
+.resume-content-block:last-of-type {
+    border-bottom: none;
+}
+
+.resume-content-block p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #B0B0B0;
+    margin-bottom: 10px;
+}
+
+.resume-content-block p:last-child {
+    margin-bottom: 0;
+}
+
+.resume-content-block h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    color: #BB86FC;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.resume-content-block h3:first-child {
+    margin-top: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .resume-wrapper {
+        margin: 20px auto;
+        max-width: 95%;
+    }
+    .resume-header-section h1 {
+        font-size: 2em;
+    }
+    .resume-header-section p {
+        font-size: 0.9em;
+    }
+    .resume-section-title {
+        padding: 12px 20px;
+    }
+    .resume-section-title h2 {
+        font-size: 1.4em;
+    }
+    .resume-content-block {
+        padding: 20px;
+    }
+    .resume-content-block p {
+        font-size: 0.95em;
+    }
+    .resume-content-block h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .resume-wrapper {
+        margin: 15px auto;
+        border-radius: 8px;
+    }
+    .resume-header-section {
+        padding: 20px 15px;
+    }
+    .resume-header-section h1 {
+        font-size: 1.8em;
+    }
+    .resume-header-section p {
+        font-size: 0.8em;
+    }
+    .resume-section-title {
+        padding: 10px 15px;
+    }
+    .resume-section-title h2 {
+        font-size: 1.2em;
+    }
+    .resume-content-block {
+        padding: 15px;
+    }
+    .resume-content-block p {
+        font-size: 0.85em;
+    }
+    .resume-content-block h3 {
+        font-size: 1.1em;
+    }
+}

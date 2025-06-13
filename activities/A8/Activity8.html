@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 8 - Hogwarts Quest</title>
+    <link rel="icon" type="image/x-icon" href="../../images/laptop-code-solid.svg">
+    <link rel="stylesheet" href="../../css/activity8.css"> 
+    <link rel="stylesheet" href="../../css/global-nav.css"> 
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../index.html" class="logo">Portfolio.dev</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../../index.html#about" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="createacc.html" class="activity8-form-wrapper">
+            <div class="activity8-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Hogwarts-Crest.png" alt="logo" width="50px"><span>Hogwarts Quest</span>
+            </div>
+
+            <div class="activity8-container">
+                <h2>Online Application</h2>
+            </div>
+
+            <div class="activity8-note">
+                <strong>Reminder:</strong> <br>
+                <p class="activity8-warning">
+                    Please provide your correct and complete information. Fields marked with asterisk (<span class="required-asterisk">*</span>) are required.
+                </p>
+            </div>
+
+            <div class="activity8-section">
+                <h3>Application Term & Course/Strand</h3>
+                <hr>
+                <label for="campus">Campus:<span class="required-asterisk">*</span></label>
+                <select name="campus" id="campus" required>
+                    <option value="" disabled selected hidden>Select a Campus</option> <optgroup label="National Capital Region (NCR)">
+                        <option value="manila">Hogwarts Manila</option>
+                        <option value="fairview">Hogwarts Fairview</option>
+                        <option value="moa">Hogwarts MOA</option>
+                        <option value="eastortigas">Hogwarts East Ortigas</option>
+                        <option value="laspiñas">Hogwarts Las Piñas</option>
+                    </optgroup>
+
+                    <optgroup label="Region III (Central Luzon)">
+                        <option value="baliwag">Hogwarts Baliwag</option>
+                        <option value="clark">Hogwarts Clark</option>
+                    </optgroup>
+
+                    <optgroup label="Region IV-A (CALABARZON)">
+                        <option value="laguna">Hogwarts Laguna</option>
+                        <option value="dasmariñas">Hogwarts Dasmariñas</option>
+                        <option value="lipa">Hogwarts Lipa</option>
+                    </optgroup>
+
+                    <optgroup label="Region VI (Western Visayas)">
+                        <option value="bacolod">Hogwarts Bacolod</option>
+                    </optgroup>
+
+                    <optgroup label="Region VII (Central Visayas)">
+                        <option value="cebu">Hogwarts Cebu</option>
+                    </optgroup>
+                </select>
+
+                <label for="year">Academic Year:<span class="required-asterisk">*</span></label>
+                <select name="year" id="year" required>
+                    <option value="" disabled selected hidden>Select Academic Year</option> <option value="2025-2026">2025-2026</option>
+                    <option value="2026-2027">2026-2027</option>
+                    <option value="2027-2028">2027-2028</option>
+                </select>
+
+                <label for="term">Academic Term:<span class="required-asterisk">*</span></label>
+                <select name="term" id="term" required>
+                    <option value="" disabled selected hidden>Select Academic Term</option> <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                </select>
+
+                <label for="level">Applying For:<span class="required-asterisk">*</span></label>
+                <select name="level" id="level" required>
+                    <option value="" disabled selected hidden>Select Application Level</option> <optgroup label="Basic Education">
+                        <option value="grade11">Grade 11</option>
+                        <option value="grade12">Grade 12</option>
+                    </optgroup>
+
+                    <optgroup label="Higher Education">
+                        <option value="freshman">Freshman</option>
+                        <option value="transferee">Transferee</option>
+                        <option value="seconddegree">Second Degree Taker</option>
+                        <option value="crossenrollee">Cross Enrollee</option>
+                        <option value="graduatestudies">Graduate Studies</option>
+                    </optgroup>
+                </select>
+
+                <label for="program">Academic Program:<span class="required-asterisk">*</span></label>
+                <select name="program" id="program" required>
+                    <option value="" disabled selected hidden>Select Academic Program</option> <optgroup label="First-Year Foundations (Basic Magical Studies)">
+                        <option value="dada">Defense Against the Dark Arts</option>
+                        <option value="charms">Charms and Spellwork</option>
+                        <option value="transfiguration">Transfiguration</option>
+                        <option value="potions">Potions and Alchemical Principles</option>
+                    </optgroup>
+
+                    <optgroup label="School of Magical Creatures and Botany">
+                        <option value="herbology">Herbology and Magical Plant Studies</option>
+                        <option value="creaturecare">Care of Magical Creatures</option>
+                        <option value="magicalzoology">Magical Zoology and Conservation</option>
+                    </optgroup>
+
+                    <optgroup label="School of Enchanted Sciences">
+                        <option value="arithmancy">Arithmancy and Magical Calculations</option>
+                        <option value="astronomy">Astronomy and Celestial Magic</option>
+                        <option value="alchemy">Advanced Alchemy</option>
+                        <option value="runes">Ancient Runes and Magical Scripts</option>
+                    </optgroup>
+
+                    <optgroup label="School of Magical Arts and Divination">
+                        <option value="divination">Divination and Prophetic Studies</option>
+                        <option value="historyofmagic">History of Magic</option>
+                        <option value="wandlore">Wandlore and Crafting</option>
+                        <option value="illusion">Illusions and Glamour Magic</option>
+                    </optgroup>
+
+                    <optgroup label="School of Magical Professions">
+                        <option value="aurorstudies">Auror Studies and Dark Magic Defense</option>
+                        <option value="cursebreaking">Curse-Breaking and Magical Forensics</option>
+                        <option value="magicaleducation">Magical Education and Instruction</option>
+                        <option value="ministry">Magical Law and Governance (Ministry Track)</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="activity8-section">
+                <h3>Basic Information</h3>
+                <hr>
+                <div class="activity8-warning">
+                    Note: Please write your names based on your PSA/NSO-copy of birth certificate.
+                    For married females who wanted to use their married name, write your names based on your marriage certificate.
+                </div>
+                <br>
+                <label for="fname">First Name:<span class="required-asterisk">*</span></label>
+                <input type="text" id="fname" name="fname" placeholder="e.g. Harry" required>
+
+                <label for="mname">Middle Name:<span class="required-asterisk">*</span></label>
+                <input type="text" id="mname" name="mname" placeholder="e.g. James" required>
+
+                <label for="lname">Last Name:<span class="required-asterisk">*</span></label>
+                <input type="text" id="lname" name="lname" placeholder="e.g. Potter" required>
+
+                <label for="dob">Date of Birth:<span class="required-asterisk">*</span></label>
+                <input type="text" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+
+                <label for="email">Email Address:<span class="required-asterisk">*</span></label>
+                <input type="text" id="email" name="email" placeholder="e.g. harry.potter@hogwarts.ph" required>
+
+                <label for="mobile">Mobile No.:<span class="required-asterisk">*</span></label>
+                <input type="text" id="mobile" name="mobile" placeholder="e.g. +639123456789" required>
+
+                <label for="nationality">Nationality:<span class="required-asterisk">*</span></label>
+                <select name="nationality" id="nationality" required>
+                    <option value="" disabled selected hidden>Select Nationality</option> <option value="filipino">Filipino</option>
+                    <option value="afghan">Afghan</option>
+                    <option value="alandislands">Aland Islands</option>
+                    <option value="albanian">Albanian</option>
+                    <option value="algerian">Algerian</option>
+                </select>
+            </div>
+
+            <div class="activity8-dataprivacy">
+                <h3>Data Privacy Agreement</h3>
+                <input type="checkbox" id="agree" name="agree" value="agree" required>
+                By accomplishing this form, I hereby authorize National University to retain, process, disseminate, and use for research purposes all the personal data that I provided.
+                I understand and give consent to National University to use these information to communicate with me either via post, telephone, mobile text, email or other way possible.
+                In the event that I do not wish to be contacted further, I shall inform the University accordingly.
+                <br><br>
+                <input type="submit" value="Create Account" class="btn primary-btn"><input type="button" value="Cancel" class="btn secondary-btn">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span class="current-year-span"></span> Ferreras, Jan Matthew. All rights reserved.</p>
+    </footer>
+
+    <script src="../../script/script.js"></script>
+</body>
+</html>
